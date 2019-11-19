@@ -29,4 +29,4 @@ depth-box: 加载背景框插槽名称
 ```
 
 ## 效果
-![image](https://raw.githubusercontent.com/kuangch/convenience-image/master/screen.jpg)
+![image](https://github.com/qq1060844713/background-box/blob/master/background.png)
