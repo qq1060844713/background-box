@@ -1,19 +1,27 @@
 <template>
     <div class="bg-box">
-        <img class="img img-left" :src="defaultImg"/>
-        <img class="img img-right" :src="defaultImg"/>
-        <img class="img img-bottom-left" :src="defaultImg"/>
-        <img class="img img-bottom-right" :src="defaultImg"/>
-        <slot name="depth-box"></slot>
+        <img class="img img-left" :src="$constants.defaultImg" :style="$constants.frameHeight,$constants.frameWidth"/>
+        <img class="img img-right" :src="$constants.defaultImg" :style="$constants.frameHeight,$constants.frameWidth"/>
+        <img class="img img-bottom-left" :src="$constants.defaultImg" :style="$constants.frameHeight,$constants.frameWidth"/>
+        <img class="img img-bottom-right" :src="$constants.defaultImg" :style="$constants.frameHeight,$constants.frameWidth"/>
+        <slot></slot>
     </div>
 </template>
 
 <script>
     export default {
         name: "backgroundBox",
+        props: ['srcImg', 'frameWidth','frameHeight'],
         data: function () {
             return {
-                defaultImg: require('./box_left_angle.svg')
+                defaultImg: require('./box_left_angle.svg'),
+            }
+        },
+        created(){
+            this.$constants = {
+                defaultImg: this.srcImg!=undefined?this.srcImg:this.defaultImg,
+                frameWidth:'width:'+this.frameWidth,
+                frameHeight:'height:'+this.frameHeight
             }
         }
     }
@@ -21,11 +29,8 @@
 
 <style scoped lang="scss">
     .bg-box{
-        background:  rgba(0,134,234,0.20);
         position: relative;
         .img{
-            width: calc(1vw + 10px);
-            height: calc(1vw + 10px);
             position: absolute;
         }
         .img-left {

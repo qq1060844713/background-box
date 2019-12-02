@@ -2,8 +2,8 @@
 
     <div>
         <div class="item">
-            <background-box>
-                <img slot="depth-box" :src="defaultImg"/>
+            <background-box :src-img="defImg" frame-height="calc(1vw + 10px)" frame-width="calc(1vw + 10px)">
+                <img style="height: 200px;width: 200px" :src="defaultImg"/>
             </background-box>
         </div>
     </div>
@@ -18,7 +18,8 @@
         },
         data() {
             return {
-                defaultImg: require('../assets/defaultImg.png')
+                defaultImg: require('../assets/defaultImg.png'),
+                defImg:require('../assets/box_left_angle.svg')
             }
         }
     }

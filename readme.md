@@ -17,14 +17,16 @@ Vue.use(BackgroundBox)
 
 使用组件background-box
 ``` html
-  <background-box>
-     <img slot="depth-box" :src="http://img15.3lian.com/2015/f1/173/d/40.jpg"/>
- </background-box>
+<background-box :src-img="defImg" frame-height="calc(1vw + 10px)" frame-width="calc(1vw + 10px)">
+     <img style="height: 200px;width: 200px" :src="../assets/defaultImg.png"/>
+</background-box>
 ```
 
 组件属性
 ```
-depth-box: 加载背景框插槽名称
+src-img: 加载背景框素材 默认蓝色背景框
+frame-height:边框高度
+frame-width:边框宽度
 
 ```
 
