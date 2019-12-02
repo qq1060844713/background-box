@@ -31,4 +31,4 @@ frame-width:边框宽度
 ```
 
 ## 效果
-![image](https://raw.githubusercontent.com/qq1060844713/background-box/master/background.png)
+![image](https://raw.githubusercontent.com/qq1060844713/background-box/master/screen.png)
