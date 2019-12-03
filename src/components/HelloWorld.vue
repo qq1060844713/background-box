@@ -8,8 +8,8 @@
         </div>
         <div class="item">
             <background-box :src-img="defImg" frame-height="100px" frame-width="100px">
-                <div style="background: aquamarine;height: 300px;width: 300px;display: block;text-align: center">
-                    <span style="position:absolute;text-align: center;right: 36%;margin-top: 9vw;">背景框组件</span>
+                <div style="background: #ffffff;height: 300px;width: 300px;display: block;text-align: center">
+                    <span style="position:absolute;text-align: center;right: 25%;margin-top: 9vw;font-size: 30px">背景框组件</span>
                 </div>
             </background-box>
         </div>
