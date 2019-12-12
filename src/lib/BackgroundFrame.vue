@@ -11,7 +11,7 @@
 <script>
     export default {
         name: "backgroundBox",
-        props: ['srcImg', 'frameWidth','frameHeight'],
+        props: ['srcImg', 'frameSize'],
         data: function () {
             return {
                 defaultImg: require('./box_left_angle.svg'),
@@ -20,8 +20,8 @@
         created(){
             this.$constants = {
                 defaultImg: this.srcImg!=undefined?this.srcImg:this.defaultImg,
-                frameWidth:'width:'+this.frameWidth,
-                frameHeight:'height:'+this.frameHeight
+                frameWidth:'width:'+this.frameSize,
+                frameHeight:'height:'+this.frameSize
             }
         }
     }

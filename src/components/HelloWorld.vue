@@ -2,19 +2,19 @@
 
     <div>
         <div class="item">
-            <background-box :src-img="defImg" frame-height="calc(1vw + 10px)" frame-width="calc(1vw + 10px)">
+            <background-box :src-img="defImg" frame-size="calc(1vw + 10px)">
                 <img style="height: 200px;width: 200px" :src="defaultImg"/>
             </background-box>
         </div>
         <div class="item">
-            <background-box :src-img="defImg" frame-height="100px" frame-width="100px">
+            <background-box :src-img="defImg" frame-size="calc(5vw + 10px)">
                 <div style="background: #ffffff;height: 300px;width: 300px;display: block;text-align: center">
                     <span style="position:absolute;text-align: center;right: 25%;margin-top: 9vw;font-size: 30px">背景框组件</span>
                 </div>
             </background-box>
         </div>
         <div class="item">
-            <background-box :src-img="defImg" frame-height="100px" frame-width="100px">
+            <background-box :src-img="defImg" frame-size="calc(10vw + 10px)">
                 <img style="height: 400px;width: 400px" src="http://img15.3lian.com/2015/f2/8/d/96.jpg"/>
             </background-box>
         </div>

@@ -25,8 +25,7 @@ Vue.use(BackgroundBox)
 组件属性
 ```
 src-img: 加载背景边框素材 默认蓝色背景框
-frame-height:边框高度
-frame-width:边框宽度
+frame-size:边框尺寸大小
 
 ```
 
