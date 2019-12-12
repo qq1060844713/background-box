@@ -17,7 +17,7 @@ Vue.use(BackgroundBox)
 
 使用组件background-box
 ``` html
-<background-box :src-img="defImg" frame-height="calc(1vw + 10px)" frame-width="calc(1vw + 10px)">
+<background-box :src-img="defImg" frame-size="calc(1vw + 10px)">
      <img style="height: 200px;width: 200px" :src="../assets/defaultImg.png"/>
 </background-box>
 ```
