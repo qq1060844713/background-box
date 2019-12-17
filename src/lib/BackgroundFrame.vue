@@ -1,9 +1,9 @@
 <template>
     <div class="bg-box">
-        <img class="img img-left" :src="$constants.defaultImg" :style="$constants.frameHeight,$constants.frameWidth"/>
-        <img class="img img-right" :src="$constants.defaultImg" :style="$constants.frameHeight,$constants.frameWidth"/>
-        <img class="img img-bottom-left" :src="$constants.defaultImg" :style="$constants.frameHeight,$constants.frameWidth"/>
-        <img class="img img-bottom-right" :src="$constants.defaultImg" :style="$constants.frameHeight,$constants.frameWidth"/>
+        <img class="img img-left" :src="$constants.defaultImg" :style="$constants.frameHeight+';'+$constants.frameWidth"/>
+        <img class="img img-right" :src="$constants.defaultImg" :style="$constants.frameHeight+';'+$constants.frameWidth"/>
+        <img class="img img-bottom-left" :src="$constants.defaultImg" :style="$constants.frameHeight+';'+$constants.frameWidth"/>
+        <img class="img img-bottom-right" :src="$constants.defaultImg" :style="$constants.frameHeight+';'+$constants.frameWidth"/>
         <slot></slot>
     </div>
 </template>
